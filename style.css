@@ -249,6 +249,9 @@ footer a:hover {
   .various-function {
     text-align: center;
   }
+  .complete-history {
+    margin: 0;
+  }
 }
 @media screen and (max-width: 950px) {
   footer {

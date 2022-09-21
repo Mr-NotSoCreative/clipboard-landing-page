@@ -130,3 +130,45 @@ h3 {
 .function .desc {
   font-size: 1rem;
 }
+
+
+
+.access-section {
+  display: grid;
+  gap: 100px;
+}
+.supercharge {
+  display: grid;
+  gap: 50px;
+}
+.three-col-section {
+  display: grid;
+  gap: 60px 40px;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 0 50px;
+}
+.three-col-section article {
+  max-width: 350px;
+  display: grid;
+  grid-auto-flow: row;
+  align-self: start;
+}
+.three-col-section img {
+  display: block;
+  justify-self: center;
+  margin-bottom: 50px;
+}
+.three-col-section article h3{
+  align-self: center;
+
+}
+.company-logo-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 0 50px;
+  gap: 65px 20px;
+
+  justify-items: center;
+}

@@ -35,6 +35,10 @@ h2,
 h3 {
   color: var(--Dark-Grayish-Blue);
 }
+
+/* Top section */
+
+
 .desc {
   color: var(--Grayish-Blue);
   line-height: 30px;
@@ -92,4 +96,37 @@ header {
   display: flex;
   gap: 25px 15px;
   font-weight: 600;
+}
+
+/* Top section -- */
+
+/* Middle section */
+
+.snippet-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 90px;
+}
+.snippets {
+  grid-column: 1 / -1;
+}
+.monitor {
+  width: 100%;
+  margin-left: -50px;
+}
+.various-function {
+  text-align: left;
+  grid-column: span 2;
+  max-width: 350px;
+}
+.various-function > *{
+  margin-bottom: 50px;
+}
+h3 {
+  margin-bottom: 10px;
+}
+.function .desc {
+  font-size: 1rem;
 }

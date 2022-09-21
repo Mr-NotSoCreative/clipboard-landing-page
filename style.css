@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 body {
   background-image: url(./images/bg-header-desktop.png);
@@ -37,7 +37,6 @@ h3 {
 }
 
 /* Top section */
-
 
 .desc {
   color: var(--Grayish-Blue);
@@ -121,7 +120,7 @@ header {
   grid-column: span 2;
   max-width: 350px;
 }
-.various-function > *{
+.various-function > * {
   margin-bottom: 50px;
 }
 h3 {
@@ -130,8 +129,6 @@ h3 {
 .function .desc {
   font-size: 1rem;
 }
-
-
 
 .access-section {
   display: grid;
@@ -160,9 +157,8 @@ h3 {
   justify-self: center;
   margin-bottom: 50px;
 }
-.three-col-section article h3{
+.three-col-section article h3 {
   align-self: center;
-
 }
 .company-logo-div {
   display: grid;
@@ -174,46 +170,99 @@ h3 {
 }
 
 aside article {
-    display: grid;
-    justify-items: center;
-    gap: 50px;
+  display: grid;
+  justify-items: center;
+  gap: 50px;
 }
 footer {
-    background-color: var(--Footer-BG);
-    margin-top: 160px;
-    display: flex;
-    width: 100%;
-    padding: 30px;
-    justify-content: space-evenly;
-    align-items: center;
+  background-color: var(--Footer-BG);
+  margin-top: 160px;
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .footer-nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: start;
-    column-gap: 80px;
-    row-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: start;
+  column-gap: 80px;
+  row-gap: 20px;
 }
 .footer-nav a {
-    color: var(--social-icon-color);
-    font-size: 90%;
+  color: var(--social-icon-color);
+  font-size: 90%;
 }
 .social-icon-div {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 .social-icon-div a {
-    color: var(--social-icon-color);
+  color: var(--social-icon-color);
 }
 .fa-brands {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 footer a:hover {
-    color: var(--Strong-Cyan)
+  color: var(--Strong-Cyan);
 }
 .ios:hover {
-    background-color: hsla(171, 66%, 44%, 0.8);
+  background-color: hsla(171, 66%, 44%, 0.8);
 }
 .mac:hover {
-    background-color: hsla(233, 100%, 69%, 0.8);
+  background-color: hsla(233, 100%, 69%, 0.8);
+}
+
+/* Middle section -- */
+
+/* media queries */
+
+@media screen and (max-width: 1000px) {
+  .monitor-img {
+    width: 100%;
+  }
+  .monitor {
+    margin: 0;
+  }
+
+  .snippet-section {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .device-img {
+    width: 100%;
+  }
+  .various-function {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-nav {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .social-icon-div {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button-div {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+  }
 }
